@@ -1,8 +1,7 @@
 <html>
-
 <head>
     <title>
-        IOT Switch Midterm
+        IOT Fan Switch
 	</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,15 +10,26 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
 </head>
-
-<body>
-    <h1>
-        IOT SWITCH
-	</h1>
-	<p>Click the button on to switch on and off to switch off</p>
-    <button id="btnOn">On</button>
-    <button id="btnOff">Off</button>
+<body id="body">
+<center>
+	<div class="col-lg-6" style="background-color:skyblue;height: 250px;width:400px; position: absolute; right: 35%;top: 30%">
+    <h1> IOT SWITCH</h1>
+	<p id ="message"></p>
+	<button id="btnoff">OFF</button>
+	<button id="btn1">1</button>
+	<button id="btn2">2</button>
+	<button id="btn3">3</button>
+	</div>
+</center>
+  
 </body>
+<style>
+	 #body{
+		 background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0szKQlmrU2IeZX-GrQq07QhsZxgBPmKypxzhyHLasrV65NT9f");
+		 background-size:cover;
+	 }
+</style>
+
 <script src="/browserMqtt.js"></script>
 <script src="/controller.js"></script>
 
