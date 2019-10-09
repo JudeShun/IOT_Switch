@@ -1,7 +1,7 @@
 {
   "name": "iot_switch",
   "version": "1.0.0",
-  "description": "",
+  "description": "amaw",
   "main": "index.js",
   "dependencies": {
     "express": "^4.17.1",
